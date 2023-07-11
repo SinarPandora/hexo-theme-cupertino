@@ -1,37 +1,105 @@
-# REMEMBER TO EDIT THIS BEFORE DEPLOYING!!!
-
-# the path to your blog's icon:
+# 网站图标
 favicon: /favicon.png
 
-# the path to manifest.json
+# 在文章列表显示摘录信息
+show_excerpt: false
+
+# 网站主题
+# 可选项：light/dark/auto
+color_scheme: auto
+
+# 显示主站颜色切换按钮
+show_color_scheme_toggle: true
+
+# 是否将文章类别自动大写
+uppercase_categories: true
+
+# 是否自动将标签首字母大写
+capitalize_tags: false
+
+# 是否自动在标签前加 “#”
+hashtag_prefix_before_tags: true
+
+# TOC - 文档内容索引
+toc: true
+toc_max_depth: 2 # 最大标题深度（2 为 2 级标题，以此类推）
+
+# 导航栏配置
+nav:
+  # 标题，始终显示在网站左上角
+  title: Blog
+  # 显示在右侧的其他页面连接
+  items:
+    文章: /archives
+    作品集: /projects
+    朋友们: /friends
+    关于我: /about
+    # 账号连接（将以图标形式显示）
+    GitHub: /
+    CodePen: /
+    Patreon: /
+    Mastodon: /
+    Discord: /
+    Search: /search
+
+# 网页底栏
+footer:
+  # 底部导航
+  链接:
+    主页: /
+    文章: /archives
+    按照标签: /tags
+    按照分类: /categories
+    搜索: /search
+    作品集: /projects
+    朋友们: /friends
+    个人简历: /resume
+    关于我: /about
+    RSS: /atom.xml
+  # 作品地址（名称：连接，将显示成超链接）
+  作品:
+    A: /
+    B: /
+  # 我的账号
+  我的账号:
+    # items
+    GitHub: /
+    CodePen: /
+    Patreon: /
+    Mastodon: /
+    Discord: /
+    Email: mailto:/
+
+# 底栏附加文本
+# footer_extra_description: something will be shown at the bottom of the footer
+
+# 网站内容许可
+license: CC BY-NC 4.0
+# 网站内容许可连接
+license_link: https://creativecommons.org/licenses/by-nc/4.0
+
+
+#  -------- 其他配置 --------
+
+# PWA 配置 manifest.json
 manifest: /manifest.json
 
 # [Open Graph Protocol](https://ogp.me/)
 og_enabled: true
 og_image: /favicon.png
 og:
-  # customize og properties here which will replace the defaults
+# customize og properties here which will replace the defaults
 
-# show excerpt on post list
-show_excerpt: false
+# 主站搜索
+# based on [hexo-generator-search](https://github.com/wzpan/hexo-generator-search)
+search: true
+search_path: search.json
 
-# light/dark/auto color scheme
-color_scheme: auto
+# 平滑滚动 (https://scrollrevealjs.org/) - animating elements as they enter/leave the viewport
+scroll_reveal: true
 
-# show floating color theme toggle
-show_color_scheme_toggle: true
-
-# uppercase categories
-uppercase_categories: true
-
-# capitalize tag names on tags page
-capitalize_tags: false
-
-# add hashtag prefix before tags
-hashtag_prefix_before_tags: true
-
-# rainbow!
-rainbow_banner: true
+# 彩虹旗配置
+rainbow_banner: false
 rainbow_banner_colors:
   - '#e50000'
   - '#ff8d00'
@@ -43,76 +111,3 @@ rainbow_banner_colors:
 rainbow_banner_shown: auto
 # Pride Month by default
 rainbow_banner_month: 6
-
-# TOC - table of contents
-toc: true
-toc_max_depth: 2
-
-# scroll reveal (https://scrollrevealjs.org/) - animating elements as they enter/leave the viewport
-scroll_reveal: true
-
-# navigation config
-nav:
-  # the title displays in the upper left corner which won't change
-  title: Blog
-  # the items displays in the upper right corner
-  items:
-    # these items will display as a link
-    Archives: /archives
-    Friends: /friends
-    Projects: /projects
-    About: /about
-    # these will be automatically be an icon
-    GitHub: https://github.com/MrWillCom
-    CodePen: https://codepen.io/mrwillcom
-    Patreon: https://www.patreon.com/MrWillCom
-    Mastodon: https://noc.social/@MrWillCom
-    Discord: https://discord.gg/UKuFDjcfY8
-    Search: /search
-
-# footer items
-footer:
-  # the title
-  Blog:
-    # the items after the title, display as links
-    Blog: /
-    Archives: /archives
-    Tags: /tags
-    Categories: /categories
-    Search: /search
-    Friends: /friends
-    Projects: /projects
-    Resume: /resume
-    About: /about
-    RSS: /atom.xml
-  # also the title
-  Projects:
-    # the items
-    RSA CLI: https://github.com/MrWillCom/rsa-cli
-    Hexo Theme Cupertino: https://github.com/MrWillCom/hexo-theme-cupertino
-    A Calendar: https://github.com/MrWillCom/a-calendar
-    Auto Mirroring Bucket: https://github.com/MrWillCom/auto-mirroring-bucket
-  # the title
-  Me:
-    # items
-    GitHub: https://github.com/MrWillCom
-    CodePen: https://codepen.io/mrwillcom
-    Patreon: https://www.patreon.com/MrWillCom
-    Mastodon: https://noc.social/@MrWillCom
-    Discord: https://discord.gg/UKuFDjcfY8
-    Email: mailto:mr.will.com@outlook.com
-
-# footer extra description
-# footer_extra_description: something will be shown at the bottom of the footer
-
-# the license your posts under
-license: CC BY-NC 4.0
-# the link of your license
-license_link: https://creativecommons.org/licenses/by-nc/4.0
-
-# search
-# based on [hexo-generator-search](https://github.com/wzpan/hexo-generator-search)
-search: true
-search_path: search.json
-
-# REMEMBER TO EDIT THIS BEFORE DEPLOYING!!!
