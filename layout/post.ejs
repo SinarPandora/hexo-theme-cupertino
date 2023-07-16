@@ -1,8 +1,8 @@
-<% if (theme.search == true && page.type == 'search') { %>
+<% if (theme.search === true && page.type === 'search') { %>
     <%- partial('_partial/search') %>
-<% } else if (page.type == 'tags') { %>
+<% } else if (page.type === 'tags') { %>
     <%- partial('_partial/tags') %>
-<% } else if (page.type == 'categories') { %>
+<% } else if (page.type === 'categories') { %>
     <%- partial('_partial/categories') %>
 <% } else { %>
 <article class="post">
@@ -70,7 +70,7 @@
             <div>
                 <div class="text">
                     <p class="label"><%= __('prev_post') %></p>
-                    <h3 class="title"><%= page.next.title %></>
+                    <h3 class="title"><%= page.next.title %></h3>
                 </div>
             </div>
         </a>
@@ -85,7 +85,7 @@
                 new Waline({
                     el: "#waline",
                     <% for (const i in config.waline) { %>
-                    <%- i %>: <%- config.waline[i] %>,
+                        <%- i %>: <%- config.waline[i] %>,
                     <% } %>
                 });
             </script>

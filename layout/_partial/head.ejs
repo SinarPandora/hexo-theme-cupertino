@@ -21,11 +21,11 @@
     } else {
       title = __('tag') + ': ' + page.tag;
     }
-  } else if (theme.search == true && page.type == 'search') {
+  } else if (theme.search === true && page.type === 'search') {
     title = __('search')
-  } else if (page.type == 'tags') {
+  } else if (page.type === 'tags') {
     title = __('tags');
-  } else if (page.type == 'categories') {
+  } else if (page.type === 'categories') {
     title = __('categories');
   }
   %>
@@ -85,22 +85,22 @@
   <% if (config.giscus) { %>
     <%- css('css/giscus') %>
   <% } %>
-  <% if (page.path == "index.html") { %>
+  <% if (page.path === "index.html") { %>
   <%- css('css/index') %>
   <% } %>
   <% if (page.path != "index.html") { %>
   <%- css('css/post') %>
   <% } %>
-  <% if (is_archive() || is_category() || is_tag() || (theme.search == true && page.type == 'search') || page.type == 'tags' || page.type == 'categories') { %>
+  <% if (is_archive() || is_category() || is_tag() || (theme.search === true && page.type === 'search') || page.type === 'tags' || page.type === 'categories') { %>
   <%- css('css/archive') %>
   <% } %>
-  <% if (theme.search == true && page.type == 'search') { %>
+  <% if (theme.search === true && page.type === 'search') { %>
   <%- css('css/search') %>
   <% } %>
-  <% if (page.type == 'tags') { %>
+  <% if (page.type === 'tags') { %>
   <%- css('css/tags') %>
   <% } %>
-  <% if (page.type == 'categories') { %>
+  <% if (page.type === 'categories') { %>
   <%- css('css/categories') %>
   <% } %>
 
